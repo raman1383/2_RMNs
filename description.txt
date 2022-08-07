@@ -1,0 +1,20 @@
+--------------PREFACE----------------------------
+ruby, perl, haskell, JS, Ocaml, R
+
+----------------VALUES-----------------------------------------
+
+* Easy to turn other languages  and pseudo code to RMN
+* performance & memory safety
+
+
+-------------- TASKS-----------------
+support : imperative(procedural , OOP) and declarative(functional, logic, mathematical, reactive)
+
+only smart pointers, no raw
+
+
+
+
+--------------FEATURES----------------
+
+has a project map: import trees and ... to understand the proj struct
