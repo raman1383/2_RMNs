@@ -1,5 +1,7 @@
+#include <iostream>
+
 int main(int argc, char const *argv[])
 {
-    /* code */
+    std::cout << "Hello from C++" << std::endl;
     return 0;
 }
