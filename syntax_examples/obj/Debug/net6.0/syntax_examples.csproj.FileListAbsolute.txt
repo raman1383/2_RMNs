@@ -1,0 +1,15 @@
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\bin\Debug\net6.0\syntax_examples.exe
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\bin\Debug\net6.0\syntax_examples.deps.json
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\bin\Debug\net6.0\syntax_examples.runtimeconfig.json
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\bin\Debug\net6.0\syntax_examples.dll
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\bin\Debug\net6.0\syntax_examples.pdb
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\syntax_examples.csproj.AssemblyReference.cache
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\syntax_examples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\syntax_examples.AssemblyInfoInputs.cache
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\syntax_examples.AssemblyInfo.cs
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\syntax_examples.csproj.CoreCompileInputs.cache
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\syntax_examples.dll
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\refint\syntax_examples.dll
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\syntax_examples.pdb
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\syntax_examples.genruntimeconfig.cache
+C:\Users\ALL\ALLnet\0_ALL_SDK\2_RMN\syntax_examples\obj\Debug\net6.0\ref\syntax_examples.dll
