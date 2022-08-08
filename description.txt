@@ -1,20 +1,25 @@
---------------PREFACE----------------------------
-ruby, perl, haskell, JS, Ocaml, R
+- there are no zero-cost abstractions, just the ones which worth the cost
 
-----------------VALUES-----------------------------------------
-
-* Easy to turn other languages  and pseudo code to RMN
-* performance & memory safety
-
-
--------------- TASKS-----------------
-support : imperative(procedural , OOP) and declarative(functional, logic, mathematical, reactive)
-
-only smart pointers, no raw
+$ what if we invented an AI assistant for better or paginational compiling big projecs
 
 
 
 
 --------------FEATURES----------------
+tip = heavy features will be implemented in the SIDE to let the Core RMN stay light
 
-has a project map: import trees and ... to understand the proj struct
+# Rust performance and memory safety (borrowing and ownership(modified),lifetime annotations , ARC,an analyzer that tells you when to free what, runs the code first on a 
+	memory sandbox to detect leaks & more... . are provided by the SIDE and do not add any burden to the Core lang or final exe). so the core language can compile with any C compiler
+
+# strong and static type system
+
+# support : imperative(procedural , OOP) and declarative(functional, logic, mathematical, reactive)
+
+# Easy to turn other languages  and pseudo code to RMN
+# Go compilation time (inovations to dependency analysis)
+# native support for assembly
+# only smart pointers, no raw
+# has a project map: import trees and ... to understand the proj struct
+# smart namespace system
+# set global code style and guidelines & linting applied to the whole project
+# native TDD approach
