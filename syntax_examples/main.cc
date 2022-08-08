@@ -2,6 +2,9 @@
 
 void greet();
 
+// Global variable declaration
+int c = 12;
+
 int main(int argc, char const *argv[])
 {
     int age = 10;
@@ -120,6 +123,9 @@ jump:
 
     greet();
 
+    test_2(); // var = 1
+    test_2(); // var = 2
+
     return 0;
 }
 
@@ -127,4 +133,26 @@ jump:
 void greet()
 {
     std::cout << "Hello World \n";
+}
+
+// same name different arguments (function overload)
+int test() {}
+int test(int a) {}
+float test(double a) {}
+int test(int a, double b) {}
+
+void test_2()
+{
+    // var is a static variable
+    static int var = 0;
+    ++var;
+
+    std::cout << var << std::endl;
+}
+
+// return value by reference
+int &test_3()
+{
+    int n = 2;
+    return n;
 }
