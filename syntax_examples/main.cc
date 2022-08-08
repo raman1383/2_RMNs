@@ -126,6 +126,11 @@ jump:
     test_2(); // var = 1
     test_2(); // var = 2
 
+    // declare and initialize an array
+    int x[] = {19, 10, 8, 17, 9, 15};
+    // multidimensional
+    int test[2][3] = {{2, 4, 5}, {9, 0, 19}};
+
     return 0;
 }
 

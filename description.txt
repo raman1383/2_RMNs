@@ -24,3 +24,4 @@ tip = heavy features will be implemented in the SIDE to let the Core RMN stay li
 # set global code style and guidelines & linting applied to the whole project
 # native TDD approach
 # pass arrguments by name (not position)
+# parallel computing & native GPU runnning
