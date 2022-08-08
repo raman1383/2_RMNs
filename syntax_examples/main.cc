@@ -1,5 +1,7 @@
 #include <iostream>
 
+void greet();
+
 int main(int argc, char const *argv[])
 {
     int age = 10;
@@ -9,6 +11,8 @@ int main(int argc, char const *argv[])
     double height = 5.2332;
     bool isAlive = true;
     const int LIGHT_SPEED = 299792458;
+    float num, average, sum = 0.0;
+    int i, n;
 
     /*
         +	Addition
@@ -64,6 +68,63 @@ int main(int argc, char const *argv[])
          >>	gets the input value	cin >> num;
     */
 
+    for (size_t i = 0; i < 5; i++)
+    {
+        printf("Hello");
+    }
+
+    do
+    {
+        printf("Nothing");
+
+    } while (false);
+
+    while (false)
+    {
+        printf("None");
+        break;
+        continue;
+    }
+
+    switch (int x = 12)
+    {
+    case 10:
+        printf("its 10");
+        break;
+
+    case 12:
+        printf("its 12");
+        break;
+
+    default:
+        printf("Do not care");
+        break;
+    }
+
+    for (i = 1; i <= n; ++i)
+    {
+        std::cout << "Enter n" << i << ": ";
+        if (num < 0.0)
+        {
+            // Control of the program move to jump:
+            goto jump;
+        }
+        sum += num;
+    }
+
+jump:
+    average = sum / (i - 1);
+    std::cout << "\nAverage = " << average;
+
     std::cout << "Hello from C++" << std::endl;
+
+    greet();
+
     return 0;
+}
+
+// function declaration
+void greet()
+{
+    std::cout << "Hello World \n";
 }
