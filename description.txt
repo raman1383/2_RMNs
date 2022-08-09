@@ -25,3 +25,4 @@ tip = heavy features will be implemented in the SIDE to let the Core RMN stay li
 # native TDD approach
 # pass arrguments by name (not position)
 # parallel computing & native GPU runnning
+# HACK mode(fast demo) and Production mode(safe, fast , ...)

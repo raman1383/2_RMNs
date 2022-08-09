@@ -1,12 +1,91 @@
 #include <iostream>
+using namespace std;
 
 void greet();
 
 // Global variable declaration
 int c = 12;
 
+// function definition to swap values
+void swap(int &n1, int &n2)
+{
+    int temp;
+    temp = n1;
+    n1 = n2;
+    n2 = temp;
+}
+
+enum week
+{
+    Sunday,
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday
+};
+enum seasons
+{
+    spring = 34,
+    summer = 4,
+    autumn = 9,
+    winter = 32
+};
+
+struct Person
+{
+    char name[50];
+    int age;
+    float salary;
+};
+
+// copying obj is expensive, pass by reference
+class Room
+{
+public:
+    double length;
+    double breadth;
+    double height;
+
+    // constructor
+    Room(){
+
+    };
+
+    // operator overloading
+    void operator++()
+    {
+        ++length;
+    }
+
+    double calculateArea()
+    {
+        return length * breadth;
+    }
+
+    double calculateVolume()
+    {
+        return length * breadth * height;
+    }
+
+private:
+    int a;
+    void function1() {}
+};
+
+void displayData(Person p)
+{
+    cout << "\nDisplaying Information." << endl;
+    cout << "Name: " << p.name << endl;
+    cout << "Age: " << p.age << endl;
+    cout << "Salary: " << p.salary;
+}
+
 int main(int argc, char const *argv[])
 {
+    Room room3, room4;
+    room3.length = 5.5;
     int age = 10;
     float weight = 12.4;
     char grade = 'a';
@@ -130,6 +209,37 @@ jump:
     int x[] = {19, 10, 8, 17, 9, 15};
     // multidimensional
     int test[2][3] = {{2, 4, 5}, {9, 0, 19}};
+
+    char str[] = "Hello";
+
+    Person BillClinton;
+    BillClinton.age = 80;
+
+    Person *ptr, d;
+    ptr = &d;
+    std::cout << "Enter feet: ";
+    cin >> (*ptr).age;
+    cout << "Enter inch: ";
+    cin >> (*ptr).salary;
+
+    cout << "Displaying information." << endl;
+    cout << "Distance = " << (*ptr).age << " feet " << (*ptr).salary << " inches";
+
+    // declare an int pointer
+    int *pointVar;
+
+    // dynamically allocate memory
+    // for an int variable
+    pointVar = new int;
+
+    // assign value to the variable memory
+    *pointVar = 45;
+
+    // print the value stored in memory
+    cout << *pointVar; // Output: 45
+
+    // deallocate the memory
+    delete pointVar;
 
     return 0;
 }
