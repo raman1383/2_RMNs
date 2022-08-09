@@ -74,6 +74,67 @@ private:
     void function1() {}
 };
 
+class Base
+{
+public:
+    void print()
+    {
+        cout << "Base Function" << endl;
+    }
+};
+
+class Derived : public Base
+{
+public:
+    void print()
+    {
+        cout << "Derived Function" << endl;
+    }
+};
+
+class main
+{
+private:
+    /* data */
+public:
+    void print()
+    {
+        cout << "main    Function" << endl;
+    }
+
+    // can access private and public
+    friend void print2()
+    {
+        cout << "main    Function" << endl;
+    }
+
+    // will be overriden by the derived
+    virtual void print3()
+    {
+        cout << "main    Function" << endl;
+    }
+};
+
+class DerivedFromDerived : public main, public Base
+{
+public:
+    void print3() override
+    {
+        // code
+    }
+};
+
+template <class T>
+class Number
+{
+private:
+    T num;
+
+public:
+    Number(T n) : num(n) {}
+    T getNum() { return num; }
+};
+
 void displayData(Person p)
 {
     cout << "\nDisplaying Information." << endl;
@@ -240,6 +301,15 @@ jump:
 
     // deallocate the memory
     delete pointVar;
+
+    Derived derived1, derived2;
+    derived1.print();
+
+    // access print() function of the Base class
+    derived2.Base::print();
+
+    DerivedFromDerived dd;
+    dd.main::print();
 
     return 0;
 }
