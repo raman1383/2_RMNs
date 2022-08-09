@@ -156,8 +156,20 @@ void test_2()
 }
 
 // return value by reference
+static int n = 1;
 int &test_3()
 {
     int n = 2;
     return n;
+}
+
+auto test_4()
+{
+    int arr[][2] = {
+        {3, 4},
+        {9, 5},
+        {7, 1},
+    };
+
+    return arr;
 }
