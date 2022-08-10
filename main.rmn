@@ -3,17 +3,22 @@ fun Main:
     // it can execute like JS & PY(notebook by notebook) or like C,C++,Rust(from Main)
 
 
+global const int PI <- 3.14159
 
+static int count <- 0
+
+ato x <- anyType
 int x <- -1
 unt x <- 1 // only positive nums
 bol x <- false
 str x <- "String"
 chr x <- 'C'
 flt x <- 12.34
+ptr x <- variableName
+adr x <- variableName
 // instead of null
 opt x <- x.failure
 opt x <- x.success
-
 
 loop [n = iter count(optional)] 
     if n [condition] 
@@ -27,6 +32,11 @@ loop [n = iter count(optional)]
 loop i in array:
     // element of collection
 
+loop [condition] :
+    // do stuff
+    [pattern] ? [do if true] : [do if false]
+    continue
+    break
 
 
 loop once:
@@ -41,12 +51,12 @@ enum name:
 
 
 match pattern:
-    x -> // do stuff
-         // do more stuff
-         // do more stuff
+    x-> // do stuff
+        // do more stuff
+        // do more stuff
 
-    y -> // do stuff
-    z -> // do stuff
+    y-> // do stuff
+    z-> // do stuff
 
 
 
@@ -57,19 +67,35 @@ fun name(arg: type , arg2: type = default val , arg3: type )-> return type :
     // do fun stuff
 
 
+trait: 
+    sortable: int,unt,char,flt
+    addable: int, unt, flt
+    sexy: ptr,adr
+
+genfun name|T: sortable, U: sexy|( arg: T, arg2: U )-> U :
+    // do stuff
+
 
 obj name :
     pub :
         bol isAlive 
         int age 
         str name 
+        fun ++ : //++ operator overload
+        fun get old() : 
+            age++
+        fun changeName(name: str):
+            name <- name // can differentiate by syntax highlighting
 
     inherits :
+        from baseObj4
         from baseObj1 :
             override base1func(args) :
                 // stuff
-
         from baseObj2
 
 
+
+
 heapy obj name <- name: "Raman", age: 22, isAlive: true 
+
