@@ -10,25 +10,25 @@ global const int PI <- 3.14159
 
 static int count <- 0
 
-ato x <- anyType
+auto x <- anyType
 int x <- -1
-unt x <- 1 // only positive nums
-bol x <- false
+uint x <- 1 // only positive nums
+bool x <- false
 str x <- "String"
-chr x <- 'C'
-flt x <- 12.34
-ptr x <- variableName
+char x <- 'C'
+float x <- 12.34
+smrtptr x <- variableName
 deref(x) , addr(x)
 // instead of null
 opt x <- x.failure
 opt x <- x.success
 
 loop [n = iter count(optional)]:
-    if n [condition] 
+    if n [condition] :
         break
-    elsif [condition] 
+    elsif [condition] :
         continue
-    else 
+    else :
         return 0
     
 
@@ -89,8 +89,10 @@ obj name :
         int age 
         str name 
         fun ++ : //++ operator overload
-        fun get old() : 
+        fun getOld() : 
             age++
+        fun getYoung() : 
+            age--
         fun changeName(name: str):
             name <- name // can differentiate by syntax highlighting
 
@@ -103,6 +105,8 @@ obj name :
                 // stuff
         from baseObj2
 
+
+auto sayCrap <- x >= 12 ? log "Fuck" : "Shit"
 
 
 heapy obj name <- name: "Raman", age: 22, isAlive: true 
