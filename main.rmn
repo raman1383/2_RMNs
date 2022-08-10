@@ -1,3 +1,19 @@
+fun Main:
+    // do stuff
+
+
+
+int x <- -1
+unt x <- 1 // only positive nums
+bol x <- false
+str x <- "String"
+chr x <- 'C'
+flt x <- 12.34
+// instead of null
+opt x <- x.failure
+opt x <- x.success
+
+
 loop [n = iter count(optional)] 
     if n [condition] 
         break
@@ -7,13 +23,51 @@ loop [n = iter count(optional)]
         return 0
     
 
+loop i in array:
+    // element of collection
 
-int x = -1
-uint x = 1 // only positive nums
-bool x = false
-str x = "String"
-char x = 'C'
+
+
+loop once:
+    // iterate once 
+[condition] is true
+
+
+enum name:
+    x
+    y: 12
+    z
+
+
+match pattern:
+    x -> // do stuff
+         // do more stuff
+         // do more stuff
+
+    y -> // do stuff
+    z -> // do stuff
+
+
+
+
 
 fun name(arg: type , arg2: type = default val , arg3: type )-> return type : 
     // do fun stuff
 
+
+
+obj name :
+    pub :
+        bol isAlive 
+        int age 
+        str name 
+
+    inherits :
+        from baseObj1 :
+            override base1func(args) :
+                // stuff
+
+        from baseObj2
+
+
+heapy obj name <- name: "Raman", age: 22, isAlive: true 
