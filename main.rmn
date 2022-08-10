@@ -1,0 +1,19 @@
+loop [n = iter count(optional)] 
+    if n [condition] 
+        break
+    elsif [condition] 
+        continue
+    else 
+        return 0
+    
+
+
+int x = -1
+uint x = 1 // only positive nums
+bool x = false
+str x = "String"
+char x = 'C'
+
+fun name(arg: type , arg2: type = default val , arg3: type )-> return type : 
+    // do fun stuff
+
