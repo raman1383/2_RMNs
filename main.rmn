@@ -90,13 +90,20 @@ trait:
         
 
 genfun name|T: sortable,addable | U: sexy |
-    ( arg: T, arg2: U )-> U :
+    ( arg: T, arg2: U ) -> U :
 
     // do stuff
     return U
 
 
 obj name :
+
+    constructor():
+        // do initializing stuff
+
+    deConstructor():
+        // do ending stuff
+
     pub :
         bol isAlive 
         int age 
