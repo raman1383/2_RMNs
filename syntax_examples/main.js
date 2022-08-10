@@ -122,3 +122,10 @@ let arr2 = [...arr1, 'three', 'four', 'five'];
 
 console.log("end !");
 
+let age2 = 5;
+
+let welcome = (age2 < 18) ?
+    () => console.log('Baby') :
+    () => console.log('Adult');
+
+welcome(); // Baby
