@@ -1,6 +1,7 @@
 fun Main:
 
-    log "Hello world"
+    input str name // initialize var same when in use
+    log "Hello world, my name is #name \#climateChange"
 
     // do stuff
     // it can execute like JS & PY(notebook by notebook) or like C,C++,Rust(from Main)
@@ -10,15 +11,15 @@ global const int PI <- 3.14159
 
 static int count <- 0
 
-auto x <- anyType
+ato x <- anyType
 int x <- -1
-uint x <- 1 // only positive nums
-bool x <- false
+unt x <- 1 // only positive nums
+bol x <- false
 str x <- "String"
-char x <- 'C'
-float x <- 12.34
-smrtptr x <- variableName
-deref(x) , addr(x)
+chr x <- 'C'
+flt x <- 12.34
+ptr x <- variableName
+    deref x , addr of x
 // instead of null
 opt x <- x.failure
 opt x <- x.success
