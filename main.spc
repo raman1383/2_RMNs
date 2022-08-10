@@ -7,6 +7,6 @@
 // a new category of syntaxes are added to make RMN close to Pseudo code:
     swap [x] with [y]
     length of [x]
-    range of [x..y]
-    addr of [ptr name]
-    deref [ptr name]
+    range of [x to y]
+    addr of [ptrName]
+    deref [ptrName]

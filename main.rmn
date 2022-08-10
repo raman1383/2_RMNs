@@ -97,10 +97,8 @@ genfun name|T: sortable,addable | U: sexy |
 
 
 obj name :
-
     constructor():
         // do initializing stuff
-
     deConstructor():
         // do ending stuff
 
@@ -115,6 +113,14 @@ obj name :
             age--
         fun changeName(name: str):
             name <- name // can differentiate by syntax highlighting
+        fun revealId() :
+            log securityNum
+            log isSpy
+            log grade
+
+    int securityNum
+    bol isSpy
+    chr grade
 
     inherits :
         from baseObj4
