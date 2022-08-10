@@ -75,6 +75,18 @@ trait:
     sortable: int,unt,char,flt
     addable: int, unt, flt
     sexy: ptr,adr
+    
+    genfun bubbleSort|T: sortable|
+        (arr: [T])-> [T] :
+
+        uint n <- length of arr // length of , are reserved keywords
+
+        loop i in range of arr:
+            loop j in range of 0..n-i-1:
+                if arr[j] > arr[j+1]:
+                    swap arr[j] with arr[j+1]
+
+        
 
 genfun name|T: sortable,addable | U: sexy |
     ( arg: T, arg2: U )-> U :
