@@ -1,5 +1,6 @@
 fun Main:
     // do stuff
+    // it can execute like JS & PY(notebook by notebook) or like C,C++,Rust(from Main)
 
 
 
@@ -50,6 +51,7 @@ match pattern:
 
 
 
+// function name must start with lowercase, except Main function
 
 fun name(arg: type , arg2: type = default val , arg3: type )-> return type : 
     // do fun stuff
