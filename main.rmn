@@ -96,6 +96,5 @@ obj name :
 
 
 
-
 heapy obj name <- name: "Raman", age: 22, isAlive: true 
 
