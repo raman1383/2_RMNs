@@ -18,12 +18,12 @@ str x <- "String"
 chr x <- 'C'
 flt x <- 12.34
 ptr x <- variableName
-adr x <- variableName
+deref(x) , addr(x)
 // instead of null
 opt x <- x.failure
 opt x <- x.success
 
-loop [n = iter count(optional)] 
+loop [n = iter count(optional)]:
     if n [condition] 
         break
     elsif [condition] 
@@ -44,7 +44,7 @@ loop [condition] :
 
 loop once:
     // iterate once 
-[condition] is true
+[condition]
 
 
 enum name:
@@ -68,6 +68,7 @@ match pattern:
 
 fun name(arg: type , arg2: type = default val , arg3: type )-> return type : 
     // do fun stuff
+    return x
 
 
 trait: 
@@ -75,8 +76,11 @@ trait:
     addable: int, unt, flt
     sexy: ptr,adr
 
-genfun name|T: sortable, U: sexy|( arg: T, arg2: U )-> U :
+genfun name|T: sortable,addable | U: sexy |
+    ( arg: T, arg2: U )-> U :
+
     // do stuff
+    return U
 
 
 obj name :
@@ -93,6 +97,8 @@ obj name :
     inherits :
         from baseObj4
         from baseObj1 :
+            not variableName
+            override variableName <- 43
             override base1func(args) :
                 // stuff
         from baseObj2
