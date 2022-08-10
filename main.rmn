@@ -1,4 +1,7 @@
 fun Main:
+
+    put "Hello world"
+
     // do stuff
     // it can execute like JS & PY(notebook by notebook) or like C,C++,Rust(from Main)
 
