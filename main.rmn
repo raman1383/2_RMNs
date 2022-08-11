@@ -1,5 +1,7 @@
 ->> std->networking->TCP,IP,Routing as rt
-->> DSA->stack,heap,queue,hash->heapify as add, dequeue as dq, pop
+->> DSA->stack,heap,queue,hash->heapify as add,
+                                dequeue as dq, 
+                                pop, deHash
 ->> Tensorflow as tf
 
 
