@@ -4,36 +4,20 @@ focus is on great software, train great programmers to write great programs
 beginners can write standard pseudo code the execute it with the NN, path to greatness
 continues by coding in RMN(a heart surgeon(specialist) mos study body anatomy first(generalist))
 professionals must not do beginner things and beginners must not do professional things
-
---- plan ---
-learn about shaders and graphics (OpenGL)
-make the core RMN in a year
-make the SIDE work minimum
-make the translator work and translate the most important projects to RMN(Tensorflow, linux, django, LLVM)
-------------
+learn to use hammer before nail gun
 
 
-$ what if we invented an AI assistant for better or pagination's compiling big projects
 --------------FEATURES----------------
 tip = heavy features will be implemented in the SIDE to let the Core RMN stay light
 
-# Rust performance and memory safety (borrowing and ownership(modified),lifetime annotations , ARC,an analyzer that tells you when to free what, runs the code first on a 
+# performance and memory safety (borrowing and ownership(modified),lifetime annotations , ARC,an analyzer that tells you when to free what, runs the code first on a 
 	memory sandbox to detect leaks & more... . are provided by the SIDE and do not add any burden to the Core lang or final exe). so the core language can compile with any C compiler
 
 # strong and static type system
 
-# (low to high level) support for distributed computing
+# (low to high level) support for distributed computing and GPU computing
+# HACK mode(fast demo, beginner) and Production mode(safe, fast , ...)
 # support : imperative(procedural , OOP) and declarative(functional, logic, mathematical, reactive)
-# flat as possible, no nested shit
 # use UTF-8 
-# Easy to turn other languages  and pseudo code to RMN
-# Go compilation time (innovations to dependency analysis)
-# native support for assembly
-# only smart pointers, no raw
 # has a project map: import trees and ... to understand the proj struct
-# smart namespace system
-# set global code style and guidelines & linting applied to the whole project
 # native TDD approach
-# pass arguments by name (not position)
-# parallel computing & native GPU running
-# HACK mode(fast demo) and Production mode(safe, fast , ...)

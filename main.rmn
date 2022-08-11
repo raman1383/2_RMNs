@@ -44,6 +44,10 @@ opt x <- x.success
 //
 
 
+// native Test driven development approach
+    tst x == x'
+    tst x != y and B > 4
+
 logical operators
     and , in other PLs &&
     or  , in other PLs ||
@@ -236,3 +240,4 @@ queue x <- 4,3,5,2
 x.pop()
 x.dq()
 x.heapify()
+
