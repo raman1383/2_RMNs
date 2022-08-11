@@ -1,7 +1,9 @@
 ->> std->networking->TCP,IP,Routing as rt
 ->> DSA->stack,heap,queue->heapify as add, dequeue as dq, pop
+->> Tensorflow as tf
 
-fun Main:
+
+fun Main
 
     str name // uninitialized variable is not allowed
     input str name // initialize var same when in use
@@ -75,8 +77,10 @@ match pattern
 
 
 // function name must start with lowercase, except Main function
+// the function body must have one line space from the signature
 
-fun name(arg: type , arg2: type = defaultVal , arg3: type )-> returnType
+fun name(arg: type , arg2: type = defaultVal , arg3: type ) -> returnType
+
     // do fun stuff
     return x
 
@@ -86,9 +90,8 @@ trait
     addable <- int, unt, flt
     sexy <- ptr,adr
     
-    fun bubbleSort|T: sortable|
-        (arr: [T]) -> [T]
-        // in genfun a line space from genfun signature is necessary
+    fun bubbleSort|T: sortable|(arr: [T]) -> [T]
+        
         unt n <- len(arr)
         loop i in arr:
             loop j in range(0..n-i-1):
@@ -97,8 +100,7 @@ trait
 
         
 
-fun name|T: sortable,addable | U: sexy |
-    ( arg: T, arg2: U ) -> U
+fun name|T: sortable,addable | U: sexy | ( arg: T, arg2: U ) -> U
 
     // do stuff
     return U
@@ -107,28 +109,42 @@ fun name|T: sortable,addable | U: sexy |
 
 scope name 
     // scope does the same as namespaces in C++, to avoid naming conflicts&...
+    // and the mod in rust, module...
 
 
 
 
 obj name
     constructor()
+
         // do initializing stuff
     deConstructor()
+
         // do ending stuff
 
     pub :
         bol isAlive 
         int age 
         str name 
-        fun ++ : //++ operator overload
-        fun getOld() : 
-            age++
-        fun getYoung() : 
-            age--
+        fun += 
+        fun %= 
+        fun *= 
+        fun /= 
+        fun -= 
+        fun getOld()
+
+            age += 1
+
+        fun getYoung() 
+
+            age -= 1
+
         fun changeName(name: str):
+
             name <- name // can differentiate by syntax highlighting
-        fun revealId() :
+
+        fun revealId()
+
             log securityNum
             log isSpy
             log grade
@@ -137,30 +153,40 @@ obj name
     bol isSpy
     chr grade
 
-    inherits :
+    inherits
         from baseObj4
-        from baseObj1 :
-            not variableName
+        from baseObj1
+            not variableName, secondVarName
             override variableName <- 43
-            override base1func(args) :
+            override base1func(args)
                 // stuff
         from baseObj2
 
 
 obj | T: sortable,sexy | V: addable | genericName 
     constructor(are: T, arg2: U)
+
         // do initializing stuff
+
     deConstructor()
+
         // do ending stuff
 
 
 ato sayCrap <- x >= 12 ? log "Fuck" : "Shit"
 
 
-heapy obj name <- name: "Raman", age: 22, isAlive: true 
+
+// is keyword assigns value to object members
+heapy obj name <- name is "Raman",
+                  age is 22, 
+                  isAlive is true 
 
 std->baseObj.funName() //routing syntaxes
 
-heap x <- 2,3,5,8
-stack x <- 2,3,5,8
-queue x <- 2,3,5,8
+heap x <- 1,3,3,8
+stack x <- 2,0,5,5
+queue x <- 4,3,5,2
+x.pop()
+x.dq()
+x.heapify()

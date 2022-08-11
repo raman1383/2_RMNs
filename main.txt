@@ -1,4 +1,8 @@
+// from development we ship the optimized LLVM code to light native compilers
+
 // tradeoffs in software happen when you want two big features from one system
+
+// the way you solve the chicken & egg problem is by having both chickens and eggs
 
 // our goal was to reduce the WTF/sec
 
