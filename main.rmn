@@ -1,5 +1,5 @@
 ->> std->networking->TCP,IP,Routing as rt
-->> DSA->stack,heap,queue->heapify as add, dequeue as dq, pop
+->> DSA->stack,heap,queue,hash->heapify as add, dequeue as dq, pop
 ->> Tensorflow as tf
 
 
@@ -23,6 +23,9 @@ static int count <- 0
 ato x <- anyType
 mut ato x <- anyType // mut allows variable mutability
 int x <- -1
+[int] x <- [-23,54] // array of int, arrays are zero index based
+mut [int] x <- [-23,54]
+[[int]] x <- [[213,444,2],[134,74]] // multi dimensional array of int
 mut int x <- -1
 unt x <- 1 // only positive nums
 bol x <- false
