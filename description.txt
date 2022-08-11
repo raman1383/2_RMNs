@@ -3,7 +3,7 @@ make software as simple as possible, free the resources to build greatness not f
 focus is on great software, train great programmers to write great programs
 beginners can write standard pseudo code the execute it with the NN, path to greatness
 continues by coding in RMN(a heart surgeon(specialist) mos study body anatomy first(generalist))
-
+professionals must not do beginner things and beginners must not do professional things
 
 --- plan ---
 learn about shaders and graphics (OpenGL)
