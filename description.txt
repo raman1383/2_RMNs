@@ -1,6 +1,8 @@
 #the grand rule of ALL is "do not make it harder to be simpler"
 make software as simple as possible, free the resources to build greatness not fix shit bugs
-
+focus is on great software, train great programmers to write great programs
+beginners can write standard pseudo code the execute it with the NN, path to greatness
+continues by coding in RMN(a heart surgeon(specialist) mos study body anatomy first(generalist))
 
 
 --- plan ---
@@ -20,6 +22,7 @@ tip = heavy features will be implemented in the SIDE to let the Core RMN stay li
 
 # strong and static type system
 
+# (low to high level) support for distributed computing
 # support : imperative(procedural , OOP) and declarative(functional, logic, mathematical, reactive)
 # flat as possible, no nested shit
 # use UTF-8 
