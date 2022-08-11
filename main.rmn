@@ -3,6 +3,9 @@
 ->> Tensorflow as tf
 
 
+""" for documenting functions, objects, libraries, ... """
+
+
 fun Main
 
     str name // uninitialized variable is not allowed
