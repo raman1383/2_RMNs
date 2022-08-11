@@ -104,6 +104,13 @@ fun name|T: sortable,addable | U: sexy |
     return U
 
 
+
+scope name 
+    // scope does the same as namespaces in C++, to avoid naming conflicts&...
+
+
+
+
 obj name
     constructor()
         // do initializing stuff
@@ -157,6 +164,3 @@ std->baseObj.funName() //routing syntaxes
 heap x <- 2,3,5,8
 stack x <- 2,3,5,8
 queue x <- 2,3,5,8
-
-scope name 
-    // scope does the same as namespaces in C++, to avoid naming conflicts&...
