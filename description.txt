@@ -4,7 +4,7 @@ make software as simple as possible, free the resources to build greatness not f
 
 
 --- plan ---
-learn about shaders and graphics
+learn about shaders and graphics (OpenGL)
 make the core RMN in a year
 make the SIDE work minimum
 make the translator work and translate the most important projects to RMN(Tensorflow, linux, django, LLVM)
