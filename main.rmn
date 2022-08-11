@@ -144,4 +144,4 @@ heapy obj name <- name: "Raman", age: 22, isAlive: true
 
 std->baseObj.funName() //routing syntaxes
 
-DSA->heap x <- 
+heap x <- 2,3,5,8
