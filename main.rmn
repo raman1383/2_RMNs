@@ -36,10 +36,12 @@ str x <- "String"
 chr x <- 'C'
 flt x <- 12.34
 flt 🤣 <- 12.34 // UTF-8 encoding
-ptr x <- variableName
 // instead of null
 opt x <- x.failure
 opt x <- x.success
+
+// pointers and addresses
+//
 
 
 logical operators
@@ -118,6 +120,15 @@ fun name(arg: type , arg2: type = defaultVal , arg3: type ) -> returnType
 
     // do fun stuff
     return x
+
+
+// if function returns nothing, the returnType is empty
+fun name(arg: type , arg2: type = defaultVal , arg3: type )
+
+    // do fun stuff
+
+
+
 
 
 trait

@@ -1,4 +1,5 @@
 fn main() {
-    let x: f64 = 12.12;
-    println!("Hello from rust");
+    let x = 10;
+    let xx = &x;
+    println!("Hello, world! {}", &xx);
 }

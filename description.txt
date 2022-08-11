@@ -21,7 +21,7 @@ tip = heavy features will be implemented in the SIDE to let the Core RMN stay li
 # strong and static type system
 
 # support : imperative(procedural , OOP) and declarative(functional, logic, mathematical, reactive)
-
+# flat as possible, no nested shit
 # use UTF-8 
 # Easy to turn other languages  and pseudo code to RMN
 # Go compilation time (innovations to dependency analysis)
