@@ -1,10 +1,11 @@
-- there are no zero-cost abstractions, just the ones which worth the cost
+--- plan ---
+make the core RMN in a year
+make the SIDE work minimum
+make the translator work and translate the most important projects to RMN(Tensorflow, linux, django, LLVM)
+------------
 
-$ what if we invented an AI assistant for better or paginational compiling big projecs
 
-
-
-
+$ what if we invented an AI assistant for better or pagination's compiling big projects
 --------------FEATURES----------------
 tip = heavy features will be implemented in the SIDE to let the Core RMN stay light
 
@@ -16,13 +17,13 @@ tip = heavy features will be implemented in the SIDE to let the Core RMN stay li
 # support : imperative(procedural , OOP) and declarative(functional, logic, mathematical, reactive)
 
 # Easy to turn other languages  and pseudo code to RMN
-# Go compilation time (inovations to dependency analysis)
+# Go compilation time (innovations to dependency analysis)
 # native support for assembly
 # only smart pointers, no raw
 # has a project map: import trees and ... to understand the proj struct
 # smart namespace system
 # set global code style and guidelines & linting applied to the whole project
 # native TDD approach
-# pass arrguments by name (not position)
-# parallel computing & native GPU runnning
+# pass arguments by name (not position)
+# parallel computing & native GPU running
 # HACK mode(fast demo) and Production mode(safe, fast , ...)

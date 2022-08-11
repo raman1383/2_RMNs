@@ -3,6 +3,7 @@
 
 fun Main:
 
+    str name // uninitialized variable is not allowed
     input str name // initialize var same when in use
     log "Hello world, my name is #name \#climateChange"
 
@@ -29,40 +30,43 @@ opt x <- x.success
 map x <- set( elements )
 
 
-loop [n = iter count(optional)]:
-    if n [condition] :
+loop [n = iter count(optional)]
+    if n [condition]
         break
-    elsif [condition] :
+    elsif [condition]
         continue
-    else :
+    else
         return 0
     
 
-loop i in array:
+loop index in collection
     // element of collection
 
-loop [condition] :
+loop [condition]
     // do stuff
     [pattern] ? [do if true] : [do if false]
     continue
     break
 
 
-loop once:
+loop once
     // iterate once 
 [condition]
 
 
-enum name:
+enum name
     x
     y: 12
     z
 
+name->x
 
-match pattern:
-    x-> // do stuff
-        // do more stuff
-        // do more stuff
+
+match pattern
+    x-> /*
+            do more stuff
+            do more stuff
+        */
 
     y-> // do stuff
     z-> // do stuff
@@ -72,39 +76,38 @@ match pattern:
 
 // function name must start with lowercase, except Main function
 
-fun name(arg: type , arg2: type = default val , arg3: type )-> return type : 
+fun name(arg: type , arg2: type = defaultVal , arg3: type )-> returnType
     // do fun stuff
     return x
 
 
-trait: 
-    sortable: int,unt,char,flt
-    addable: int, unt, flt
-    sexy: ptr,adr
+trait
+    sortable <- int,unt,char,flt
+    addable <- int, unt, flt
+    sexy <- ptr,adr
     
-    genfun bubbleSort|T: sortable|
-        (arr: [T])-> [T] :
-
-        uint n <- length of arr // length of , are reserved keywords
-
-        loop i in range of arr:
-            loop j in range of 0..n-i-1:
+    fun bubbleSort|T: sortable|
+        (arr: [T]) -> [T]
+        // in genfun a line space from genfun signature is necessary
+        unt n <- len(arr)
+        loop i in arr:
+            loop j in range(0..n-i-1):
                 if arr[j] > arr[j+1]:
-                    swap arr[j] with arr[j+1]
+                    swap(arr[j], arr[j+1])
 
         
 
-genfun name|T: sortable,addable | U: sexy |
-    ( arg: T, arg2: U ) -> U :
+fun name|T: sortable,addable | U: sexy |
+    ( arg: T, arg2: U ) -> U
 
     // do stuff
     return U
 
 
-obj name :
-    constructor():
+obj name
+    constructor()
         // do initializing stuff
-    deConstructor():
+    deConstructor()
         // do ending stuff
 
     pub :
@@ -137,7 +140,14 @@ obj name :
         from baseObj2
 
 
-auto sayCrap <- x >= 12 ? log "Fuck" : "Shit"
+obj | T: sortable,sexy | V: addable | genericName 
+    constructor(are: T, arg2: U)
+        // do initializing stuff
+    deConstructor()
+        // do ending stuff
+
+
+ato sayCrap <- x >= 12 ? log "Fuck" : "Shit"
 
 
 heapy obj name <- name: "Raman", age: 22, isAlive: true 
@@ -145,3 +155,5 @@ heapy obj name <- name: "Raman", age: 22, isAlive: true
 std->baseObj.funName() //routing syntaxes
 
 heap x <- 2,3,5,8
+stack x <- 2,3,5,8
+queue x <- 2,3,5,8

@@ -2,13 +2,11 @@
 
 // our goal was to reduce the WTF/sec
 
+// there are no zero-cost abstractions, just the ones which worth the cost
+
 // add a DS&Algs part to stdLib, containing all common DSs & algorithms
 
 // design so it is possible to initialize var same time in same line is used
 
-// a new category of syntaxes are added to make RMN close to Pseudo code:
-    swap [x] with [y]
-    length of [x]
-    range of [x to y]
-    addr of [ptrName]
-    deref [ptrName]
+// in the root of the project directory there is a graphic file named "The map". it lays out the project structure, relations 
+// of parts to others, and documented description for each module
