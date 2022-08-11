@@ -34,6 +34,16 @@ opt x <- x.failure
 opt x <- x.success
 map x <- set( elements )
 
+logical operators
+    and , in other PLs &&
+    or  , in other PLs ||
+    ==
+    !=
+
+
+
+#attributeName
+#test
 
 loop [n = iter count(optional)]
     if n [condition]
