@@ -44,9 +44,15 @@ opt x <- x.success
 //
 
 
-// native Test driven development approach
+// native Test driven development approach (inner tests, scope tests)
+
+    // inner tests
     tst x == x'
-    tst x != y and B > 4
+    tst x != y and B > 4 // within first few lines of a function
+
+    // scope tests
+    
+    
 
 logical operators
     and , in other PLs &&
