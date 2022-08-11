@@ -40,7 +40,7 @@ flt 🤣 <- 12.34 // UTF-8 encoding
 opt x <- x.failure
 opt x <- x.success
 
-// pointers and addresses
+// pointers and addresses (smart by default)
 //
 
 
