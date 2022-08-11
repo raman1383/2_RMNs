@@ -1,3 +1,6 @@
+->> std->networking->TCP,IP,Routing as rt
+->> DSA->stack,heap,queue->heapify as add, dequeue as dq, pop
+
 fun Main:
 
     input str name // initialize var same when in use
@@ -23,6 +26,8 @@ ptr x <- variableName
 // instead of null
 opt x <- x.failure
 opt x <- x.success
+map x <- set( elements )
+
 
 loop [n = iter count(optional)]:
     if n [condition] :
@@ -137,3 +142,6 @@ auto sayCrap <- x >= 12 ? log "Fuck" : "Shit"
 
 heapy obj name <- name: "Raman", age: 22, isAlive: true 
 
+std->baseObj.funName() //routing syntaxes
+
+DSA->heap x <- 
