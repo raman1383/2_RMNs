@@ -28,11 +28,10 @@ str x <- "String"
 chr x <- 'C'
 flt x <- 12.34
 ptr x <- variableName
-    deref x , addr of x
 // instead of null
 opt x <- x.failure
 opt x <- x.success
-map x <- set( elements )
+
 
 logical operators
     and , in other PLs &&
