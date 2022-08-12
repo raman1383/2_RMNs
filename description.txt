@@ -11,12 +11,12 @@ learn to use hammer before nail gun
 tip = heavy features will be implemented in the SIDE to let the Core RMN stay light
 
 # performance and memory safety (borrowing and ownership(modified),lifetime annotations , ARC,an analyzer that tells you when to free what, runs the code first on a 
-	memory sandbox to detect leaks & more... . are provided by the SIDE and do not add any burden to the Core lang or final exe). so the core language can compile with any C compiler
+	memory sandbox to detect leaks & more... . are provided by the SIDE and do not add any burden to the Core lang or final exe).
 
 # strong and static type system
 
 # (low to high level) support for distributed computing and GPU computing
-# HACK mode(fast demo, beginner) and Production mode(safe, fast , ...)
+# HACK mode(fast demo, beginner, only .stdpsd) and Production mode(safe, fast ,.rmn ...)
 # support : imperative(procedural , OOP) and declarative(functional, logic, mathematical, reactive)
 # use UTF-8 
 # has a project map: import trees and ... to understand the proj struct
