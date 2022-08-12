@@ -51,19 +51,21 @@ opt x <- x.success
     tst x != y and B > 4 // within first few lines of a function
 
     // scope tests
-    
+
     
 
 logical operators
     and , in other PLs &&
     or  , in other PLs ||
+    not , in other PLs !
+    XOR , short for “exclusive-or
     ==
     !=
     <=
     >=
     <
     >
-    // bitwise
+// bitwise
     | or
     & and
     ^ XOR
@@ -164,8 +166,10 @@ fun name|T: sortable,addable | U: sexy | ( arg: T, arg2: U ) -> U
 
 
 scope name 
-    // scope does the same as namespaces in C++, to avoid naming conflicts&...
-    // and the mod in rust, module...
+// do stuff
+// scope does the same as namespaces in C++, to avoid naming conflicts&...
+// and helps with memory life  time annotations
+// and the mod in rust, module...
 
 
 
@@ -229,7 +233,7 @@ obj | T: sortable,sexy | V: addable | genericName
         // do ending stuff
 
 
-ato sayCrap <- x >= 12 ? log "Fuck" : "Shit"
+ato sayCrap <- x >= 12 ? log "Fuck" : log "Shit"
 
 
 
