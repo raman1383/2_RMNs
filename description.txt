@@ -1,3 +1,5 @@
+A SHARP TOOL FOR SHARP ENGINEERS
+
 #the grand rule of ALL is "do not make it harder to be simpler"
 make software as simple as possible, free the resources to build greatness not fix shit bugs
 focus is on great software, train great programmers to write great programs
