@@ -6,6 +6,10 @@ continues by coding in RMN(a heart surgeon(specialist) mos study body anatomy fi
 professionals must not do beginner things and beginners must not do professional things
 learn to use hammer before nail gun
 
+------------ GOALS ---------------
+
+
+
 
 --------------FEATURES----------------
 tip = heavy features will be implemented in the SIDE to let the Core RMN stay as light as C

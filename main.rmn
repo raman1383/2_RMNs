@@ -24,18 +24,30 @@ static int count <- 0
 
 ato x <- anyType
 mut ato x <- anyType // mut allows variable mutability
+i8 x <- -1
+i16 x <- -1
+i32 x <- -1
+i64 x <- -1
+i128 x <- -1
 int x <- -1
-[int] x <- [-23,54] // array of int, arrays are zero index based
+[i32] x <- [-23,54] // array of int, arrays are zero index based
 mut [int] x <- [-23,54]
-[[int]] x <- [[213,444,2],[134,74]] // multi dimensional array of int
-mut int x <- -1
-unt x <- 1 // only positive nums
-bol x <- false
-mut bol x <- false
-str x <- "String"
-chr x <- 'C'
-flt x <- 12.34
-flt 🤣 <- 12.34 // UTF-8 encoding
+[[i32]] x <- [[213,444,2],[134,74]] // multi dimensional array of int
+mut i32 x <- -1
+u8 x <- 1 // only positive nums
+u16 x <- 1 // only positive nums
+u32 x <- 1 // only positive nums
+u64 x <- 1 // only positive nums
+u128 x <- 1 // only positive nums
+uint x <- 1 // only positive nums
+bool x <- false
+mut bool x <- false
+str x <- "str on stack"
+string x <- "string on heap"
+char x <- 'C'
+f32 x <- 12.34
+f64 x <- 12.34
+float 🤣 <- 12.34 // UTF-8 encoding
 // instead of null
 opt x <- x.failure
 opt x <- x.success
@@ -144,8 +156,8 @@ fun name(arg: type , arg2: type = defaultVal , arg3: type )
 
 
 trait
-    sortable <- int,unt,char,flt
-    addable <- int, unt, flt
+    sortable <- int,uint,char,float
+    addable <- int, uint, float
     sexy <- ptr,adr
     
     fun bubbleSort|T: sortable|(arr: [T]) -> [T]
@@ -210,8 +222,8 @@ obj name
             log grade
 
     int securityNum
-    bol isSpy
-    chr grade
+    bool isSpy
+    char grade
 
     inherits
         from baseObj4
@@ -238,9 +250,9 @@ ato sayCrap <- x >= 12 ? log "Fuck" : log "Shit"
 
 
 // is keyword assigns value to object members
-heapy obj name <- name is "Raman",
-                  age is 22, 
-                  isAlive is true 
+obj name <- name is "Raman",
+            age is 22, 
+            isAlive is true 
 
 std->baseObj.funName() //routing syntaxes
 
@@ -250,4 +262,10 @@ queue x <- 4,3,5,2
 x.pop()
 x.dq()
 x.heapify()
+
+------ ownership rules -----------
+// out of scope, out of memory
+// in each scope, only one owner 
+// heavy in heap(composite data types), slim in stack(primitive data types, fixed size collections of primitive types
+    function pointers, can copy slims)
 

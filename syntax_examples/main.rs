@@ -1,5 +1,5 @@
 fn main() {
-    let x = 10;
+    let x: bool = true;
     let xx = &x;
     println!("Hello, world! {}", &xx);
 }
