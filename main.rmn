@@ -22,6 +22,7 @@ global const int PI <- 3.14159
 
 static int count <- 0
 
+x = 12
 ato x <- anyType
 mut ato x <- anyType // mut allows variable mutability
 i8 x <- -1
@@ -47,10 +48,15 @@ string x <- "string on heap"
 char x <- 'C'
 f32 x <- 12.34
 f64 x <- 12.34
+f128 x <- 12.34
 float 🤣 <- 12.34 // UTF-8 encoding
 // instead of null
 opt x <- x.failure
 opt x <- x.success
+
+// type casting
+"12" as i8
+!! type conversions that cause data loss are not allowed
 
 // pointers and addresses (smart by default)
 //
