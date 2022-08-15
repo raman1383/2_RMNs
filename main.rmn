@@ -23,8 +23,8 @@ global const int PI <- 3.14159
 static int count <- 0
 
 x = 12
-ato x <- anyType
-mut ato x <- anyType // mut allows variable mutability
+auto x <- anyType
+mut auto x <- anyType // mut allows variable mutability
 i8 x <- -1
 i16 x <- -1
 i32 x <- -1
@@ -32,8 +32,12 @@ i64 x <- -1
 i128 x <- -1
 int x <- -1
 [i32] x <- [-23,54] // array of int, arrays are zero index based
-mut [int] x <- [-23,54]
+mut [int] x <- [-23,54] //indexing of elements in collections start from 1 not 0
 [[i32]] x <- [[213,444,2],[134,74]] // multi dimensional array of int
+
+varX <- x[first] // index 0 in other PLs, 1 in RMN
+varX <- x[first+1..last]
+
 mut i32 x <- -1
 u8 x <- 1 // only positive nums
 u16 x <- 1 // only positive nums
@@ -65,8 +69,8 @@ opt x <- x.success
 // native Test driven development approach (inner tests, scope tests)
 
     // inner tests
-    tst x == x'
-    tst x != y and B > 4 // within first few lines of a function
+    #test x == x'
+    #test x != y and B > 4 // within first few lines of a function
 
     // scope tests
 
@@ -132,14 +136,22 @@ name->x
 
 
 match pattern
-    x-> /*
-            do more stuff
-            do more stuff
-        */
+    x
+        // do stuff
+    y
+        // do stuff
+    z
+        // do stuff
 
-    y-> // do stuff
-    z-> // do stuff
 
+match checkCondition
+    true, success 
+        //do stuff do stuff do stuff
+        //do stuff do stuff
+        //do stuff
+
+    false, failure
+        // do stuff
 
 
 
@@ -147,6 +159,11 @@ match pattern
 // the function body must have one line space from the signature
 
 fun name(arg: type , arg2: type = defaultVal , arg3: type ) -> returnType
+
+    // do fun stuff
+    return x
+
+fun name(arg: type , arg2: type = defaultVal , arg3: type ) -> auto
 
     // do fun stuff
     return x
@@ -217,7 +234,7 @@ obj name
 
             age -= 1
 
-        fun changeName(name: str):
+        fun changeName(name: str)
 
             name <- name // can differentiate by syntax highlighting
 
@@ -251,7 +268,7 @@ obj | T: sortable,sexy | V: addable | genericName
         // do ending stuff
 
 
-ato sayCrap <- x >= 12 ? log "Fuck" : log "Shit"
+auto sayCrap <- x >= 12 ? log "Fuck" : log "Shit"
 
 
 
