@@ -1,8 +1,35 @@
-use std->networking->TCP,IP,Routing as rt
-use DSA->stack,heap,queue,hash->heapify as add,
-                                dequeue as dq, 
-                                pop, deHash
-use Tensorflow as tf
+// imports are "modport based", a folder or libraries functionalities most only be accessible if and 
+   under conditions that the modport.rmn in the folders root provides it, 
+
+->> std
+        networking
+
+    DSA
+        Algorithms
+            graphs
+                BFS
+                DFS
+                    Ford_Fulkerson, Dijkstra
+            DP
+                top_down
+                bottom_up
+            search
+                binarySearch, linearSearch
+            sort
+                bubbleSort, quickSort, 
+        data structures
+
+    Tensorflow as tf 
+        core.NN
+            stuff, other stuff
+        threading
+            green
+                nvidia
+                intel
+
+    Qt 
+
+
 
 
 """ for documenting functions, objects, libraries, ... """
@@ -145,7 +172,7 @@ match pattern
         // do stuff
 
 
-match checkCondition
+match check_condition
     true, success 
         //do stuff do stuff do stuff
         //do stuff do stuff
@@ -159,7 +186,7 @@ match checkCondition
 // function name must start with lowercase, except Main function
 // the function body must have one line space from the signature
 
-fun name(arg: type , arg2: type = defaultVal , arg3: type ) -> returnType
+fun name_name(arg: type , arg2: type = defaultVal , arg3: type ) -> return_type
 
     // do fun stuff
     return x
@@ -184,7 +211,7 @@ trait
     addable <- int, uint, float
     sexy <- ptr,adr
     
-    fun bubbleSort|T: sortable|(arr: [T]) -> [T]
+    fun bubble_sort|T: sortable|(arr: [T]) -> [T]
         
         uint n <- len(arr)
         loop i in arr:
@@ -201,7 +228,7 @@ fun name|T: sortable,addable | U: sexy | ( arg: T, arg2: U ) -> U
 
 
 
-scope name 
+scope Name
 // do stuff
 // scope does the same as namespaces in C++, to avoid naming conflicts&...
 // and helps with memory life  time annotations
@@ -270,14 +297,14 @@ obj | T: sortable,sexy | V: addable | genericName
         // do ending stuff
 
 
-auto sayCrap <- x >= 12 ? log "Fuck" : log "Shit"
+string sayCrap <- x >= 12 ? log "Fuck" : log "Shit"
 
 
 
-// is keyword assigns value to object members
-obj name <- name is "Raman",
-            age is 22, 
-            isAlive is true 
+obj name <- name: "Raman"
+            age: 22
+            isAlive: true 
+
 
 std->baseObj.funName() //routing syntaxes
 
