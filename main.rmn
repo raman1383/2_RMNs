@@ -51,9 +51,9 @@ mut bool x <- false
 str x <- "str on stack"
 string x <- "string on heap"
 char x <- 'C'
-f32 x <- 12.34
-f64 x <- 12.34
-f128 x <- 12.34
+f32 x <- 12.3442375676459832
+f64 x <- 12.3432456642756438598432968578
+f128 x <- 12.3485624987654876585682753598749875425943
 float 🤣 <- 12.34 // UTF-8 encoding
 // instead of null
 opt x <- x.failure
