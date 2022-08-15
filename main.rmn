@@ -36,6 +36,7 @@ mut [int] x <- [-23,54] //indexing of elements in collections start from 1 not 0
 [[i32]] x <- [[213,444,2],[134,74]] // multi dimensional array of int
 
 varX <- x[first] // index 0 in other PLs, 1 in RMN
+varX <- x[mid..last]
 varX <- x[first+1..last]
 
 mut i32 x <- -1
