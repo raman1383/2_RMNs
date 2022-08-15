@@ -37,9 +37,12 @@
 
 fun Main
 
-    str name // uninitialized variable is not allowed
+    // str name // uninitialized variable is not allowed
     input str name // initialize var same when in use
-    log "Hello world, my name is #name \#climateChange"
+    log "Hello world, my name is $name \n "
+    x1 <- 2
+    x2 <- 4
+    log "$x1 plus $x2 equals $(x1+x2)"
 
     // do stuff
     // it can execute like JS & PY(notebook by notebook) or like C,C++,Rust(from Main)
@@ -58,9 +61,11 @@ i32 x <- -1
 i64 x <- -1
 i128 x <- -1
 int x <- -1
-[i32] x <- [-23,54] // array of int, arrays are zero index based
-mut [int] x <- [-23,54] //indexing of elements in collections start from 1 not 0
-[[i32]] x <- [[213,444,2],[134,74]] // multi dimensional array of int
+[i32] x <- [-23 54] // array of int, arrays are zero index based
+[i32] x <- [n^2 loop n in 1..5]
+mut [int] x <- [-23 54] //indexing of elements in collections start from 1 not 0
+[[i32]] x <- [213 444; 2 134 74] // multi dimensional array of int
+[[i32]] x <- [1..5; 2..10:2] // multi dimensional array of int
 
 varX <- x[first] // index 0 in other PLs, 1 in RMN
 varX <- x[mid..last]
@@ -77,11 +82,17 @@ bool x <- false
 mut bool x <- false
 str x <- "str on stack"
 string x <- "string on heap"
+string x <- """ this 
+is a multi line
+string on heap"""
 char x <- 'C'
 f32 x <- 12.3442375676459832
 f64 x <- 12.3432456642756438598432968578
 f128 x <- 12.3485624987654876585682753598749875425943
 float 🤣 <- 12.34 // UTF-8 encoding
+x <- (1 2 3 4 5) //tuples
+x <- (1 2 3 4 5) //tuples
+
 // instead of null
 opt x <- x.failure
 opt x <- x.success
@@ -118,11 +129,16 @@ logical operators
 // bitwise
     | or
     & and
-    ^ XOR
 
 // bitwise shift
     <<
     >>
+// mathematical
+    +
+    -
+    *
+    %
+    ^ // power
 
 
 
@@ -132,16 +148,15 @@ logical operators
 loop [n = iter count(optional)]
     if n [condition]
         break
-    elsif [condition]
+    else if [condition]
         continue
     else
         return 0
 
 
-
-
 loop index in collection
     // element of collection
+
 
 loop [condition]
     // do stuff
@@ -150,9 +165,19 @@ loop [condition]
     break
 
 
+loop startIndex..endIndex:stepSize
+    // do stuff
+    [pattern] ? [do if true] : [do if false]
+    continue
+    break
+
 loop once
     // iterate once 
 [condition]
+
+
+loop i <- 1..5, j <- 2..10:2
+    log " $i , $j "
 
 
 enum name

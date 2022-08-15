@@ -27,3 +27,4 @@ tip = heavy features will be implemented in the SIDE to let the Core RMN stay as
 # use UTF-8 
 # has a project map: import trees and ... to understand the proj struct
 # native TDD approach
+# collections(arrays,tuples,...) functionalities of julia
