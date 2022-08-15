@@ -186,7 +186,7 @@ trait
     
     fun bubbleSort|T: sortable|(arr: [T]) -> [T]
         
-        unt n <- len(arr)
+        uint n <- len(arr)
         loop i in arr:
             loop j in range(first..n-i-1):
                 if arr[j] > arr[j+1]:
@@ -260,6 +260,7 @@ obj name
 
 
 obj | T: sortable,sexy | V: addable | genericName 
+
     constructor(are: T, arg2: U)
 
         // do initializing stuff
