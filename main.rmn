@@ -33,7 +33,11 @@
 
 
 """ for documenting functions, objects, libraries, ... """
-
+// one line comment
+/*
+    multi line
+    comment
+*/
 
 fun Main
 
