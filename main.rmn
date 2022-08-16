@@ -93,6 +93,7 @@ float 🤣 <- 12.34 // UTF-8 encoding
 x <- (1 2 3 4 5) //tuples
 x <- (1 2 3 4 5) //tuples
 
+
 // instead of null
 opt x <- x.failure
 opt x <- x.success
@@ -139,7 +140,11 @@ logical operators
     *
     %
     ^ // power
-
+// assignments
+    +=
+    -=
+    /=
+    *=
 
 
 #attributeName
@@ -245,7 +250,7 @@ trait
                     swap(arr[j], arr[j+1])
 
         
-
+// has function overload(same name but different args)
 fun name|T: sortable,addable | U: sexy | ( arg: T, arg2: U ) -> U
 
     // do stuff
@@ -326,9 +331,9 @@ string sayCrap <- x >= 12 ? log "Fuck" : log "Shit"
 
 
 
-obj name <- name <- "Raman"
-            age <- 22
-            isAlive <- true 
+obj name <- name: "Raman"
+            age: 22
+            isAlive: true 
 
 
 std->baseObj.funName() //routing syntaxes
