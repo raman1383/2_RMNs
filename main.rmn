@@ -331,9 +331,15 @@ string sayCrap <- x >= 12 ? log "Fuck" : log "Shit"
 
 
 
-obj name <- name: "Raman"
-            age: 22
-            isAlive: true 
+mut obj name
+    name: "Raman"
+    age: 22
+    isAlive: true 
+
+obj nameObj
+    name: "Raman"
+    age: 22
+    isAlive: true 
 
 
 std->baseObj.funName() //routing syntaxes
