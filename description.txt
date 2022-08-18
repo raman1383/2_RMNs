@@ -22,6 +22,8 @@ tip = heavy features will be implemented in the SIDE to let the Core RMN stay as
 # performance and memory safety. does not have runtime,native support for GPU execution, native support for 
   parallel and distributed computing no GC memory safety: data ownership, data lifetime, memory sandbox, ARC
 
+# UML prototyping
+# favors writing reusable code
 # strong and static type system
 # (low to high level) support for distributed computing and GPU computing
 # HACK mode(fast demo, beginner, only .stdpsd) and Production mode(safe, fast ,.rmn ...)
