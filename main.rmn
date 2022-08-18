@@ -75,6 +75,12 @@ varX = x[first] // index 0 in other PLs, 1 in RMN
 varX = x[mid..last]
 varX = x[first+1..last]
 
+a8 x = 1
+a16 x = 1
+a32 x = 1
+a64 x = 1
+a128 x = 1
+auto x = 1
 mut i32 x = -1
 u8 x = 1 // only positive nums
 u16 x = 1 // only positive nums
