@@ -124,26 +124,27 @@ logical operators
     and , in other PLs &&
     or  , in other PLs ||
     not , in other PLs !
-    XOR , short for “exclusive-or
+    xor , short for “exclusive-or
     ==
     !=
     <=
     >=
     <
     >
-// bitwise
-    | or
-    & and
+Binary  
+        &   AND
+        |	Binary OR
+        ^	Binary XOR
+        ~	Binary One's Complement
+        <<	Binary Shift Left
+        >>	Binary Shift Right
 
-// bitwise shift
-    <<
-    >>
 // mathematical
     +
     -
     *
     %
-    ^ // power
+    pow(x, p)
 // assignments
     +=
     -=
