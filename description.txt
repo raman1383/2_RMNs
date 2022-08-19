@@ -21,7 +21,7 @@ tip = heavy features will be implemented in the SIDE to let the Core RMN stay as
  as a VM),and the option to direct compile(front, mid, backend together). so it has byte code and .exe. the VM has a GC
 
 # performance and memory safety. does not have runtime,native support for GPU execution, native support for 
-  parallel and distributed computing no GC memory safety: data ownership, data lifetime, memory sandbox, ARC
+  parallel and distributed computing no GC memory safety: data ownership, data lifetime, memory sandbox, ARC, MMU
 
 # UML prototyping
 # favors writing reusable code
