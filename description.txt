@@ -8,6 +8,13 @@ continues by coding in RMN(a heart surgeon(specialist) mos study body anatomy fi
 professionals must not do beginner things and beginners must not do professional things
 learn to use hammer before nail gun
 
+the minimum amount of complexity and fanciness is a rule.
+there is only one way to do things, no freedom, just simplicity and efficiency. there is only and only
+one single universal way of doing something.
+
+
+the design philosophy is to enable minimum ways of doing something but make that way reliable and well-grasped by
+ dev-community
 ------------ GOALS ---------------
 
 
