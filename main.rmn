@@ -44,69 +44,69 @@ fun Main
     // str name // uninitialized variable is not allowed
     input str name // initialize var same when in use
     log "Hello world, my name is $name \n "
-    x1 = 2
-    x2 = 4
+    x1 <- 2
+    x2 <- 4
     log "$x1 plus $x2 equals $(x1+x2)"
 
     // do stuff
     // it can execute like JS & PY(notebook by notebook) or like C,C++,Rust(from Main)
 
 
-global const int PI = 3.14159
+global const int PI <- 3.14159
 
-static int count = 0
+static int count <- 0
 
-x = 12
-auto x = anyType
-mut auto x = anyType // mut allows variable mutability
-i8 x = -1
-i16 x = -1
-i32 x = -1
-i64 x = -1
-i128 x = -1
-int x = -1
-[i32] x = [-23 54] // array of int, arrays are zero index based
-[i32] x = [n^2 loop n in 1..5]
-mut [int] x = [-23 54] //indexing of elements in collections start from 1 not 0
-[[i32]] x = [213 444; 2 134 74] // multi dimensional array of int
-[[i32]] x = [1..5; 2..10:2] // multi dimensional array of int
+x <- 12
+auto x <- anyType
+mut auto x <- anyType // mut allows variable mutability
+i8 x <- -1
+i16 x <- -1
+i32 x <- -1
+i64 x <- -1
+i128 x <- -1
+int x <- -1
+[i32] x <- [-23 54] // array of int, arrays are zero index based
+[i32] x <- [n^2 loop n in 1..5]
+mut [int] x <- [-23 54] //indexing of elements in collections start from 1 not 0
+[[i32]] x <- [213 444; 2 134 74] // multi dimensional array of int
+[[i32]] x <- [1..5; 2..10:2] // multi dimensional array of int
 
-varX = x[first] // index 0 in other PLs, 1 in RMN
-varX = x[mid..last]
-varX = x[first+1..last]
+varX <- x[first] // index 0 in other PLs, 1 in RMN
+varX <- x[mid..last]
+varX <- x[first+1..last]
 
-a8 x = 1
-a16 x = 1
-a32 x = 1
-a64 x = 1
-a128 x = 1
-auto x = 1
-mut i32 x = -1
-u8 x = 1 // only positive nums
-u16 x = 1 // only positive nums
-u32 x = 1 // only positive nums
-u64 x = 1 // only positive nums
-u128 x = 1 // only positive nums
-uint x = 1 // only positive nums
-bool x = false
-mut bool x = false
-str x = "str on stack"
-string x = "string on heap"
-string x = """ this 
+a8 x <- 1
+a16 x <- 1
+a32 x <- 1
+a64 x <- 1
+a128 x <- 1
+auto x <- 1
+mut i32 x <- -1
+u8 x <- 1 // only positive nums
+u16 x <- 1 // only positive nums
+u32 x <- 1 // only positive nums
+u64 x <- 1 // only positive nums
+u128 x <- 1 // only positive nums
+uint x <- 1 // only positive nums
+bool x <- false
+mut bool x <- false
+str x <- "str on stack"
+string x <- "string on heap"
+string x <- """ this 
 is a multi line
 string on heap"""
-char x = 'C'
-f32 x = 12.3442375676459832
-f64 x = 12.3432456642756438598432968578
-f128 x = 12.3485624987654876585682753598749875425943
-float 🤣 = 12.34 // UTF-8 encoding
-x = (1 2 3 4 5) //tuples
-x = (1 2 3 4 5) //tuples
+char x <- 'C'
+f32 x <- 12.3442375676459832
+f64 x <- 12.3432456642756438598432968578
+f128 x <- 12.3485624987654876585682753598749875425943
+float 🤣 <- 12.34 // UTF-8 encoding
+x <- (1 2 3 4 5) //tuples
+x <- (1 2 3 4 5) //tuples
 
 
 // instead of null
-opt x = x.failure
-opt x = x.success
+opt x <- x.failure
+opt x <- x.success
 
 // type casting
 "12" as i8
@@ -161,7 +161,7 @@ Binary
 #attributeName
 #test
 
-loop [n = iter count(optional)]
+loop [n <- iter count(optional)]
     if n [condition]
         break
     else if [condition]
@@ -181,7 +181,7 @@ loop [condition]
     break
 
 
-loop i = 1, i > 10, i += 1
+loop i <- 1, i > 10, i += 1
     // do stuff
     [pattern] ? [do if true] : [do if false]
     continue
@@ -201,7 +201,7 @@ loop once
 loop 1..10 where i % 2 == 0
     log "Even: $i"
 
-loop i = 1..5, j = 2..10:2
+loop i <- 1..5, j <- 2..10:2
     log " $i , $j "
 
 
@@ -238,12 +238,12 @@ match check_condition
 // function name must start with lowercase, except Main function
 // the function body must have one line space from the signature
 
-fun name_name(arg: type , arg2: type = defaultVal , arg3: type ) -> return_type
+fun name_name(arg: type , arg2: type <- defaultVal , arg3: type ) -> return_type
 
     // do fun stuff
     return x
 
-fun name(arg: type , arg2: type = defaultVal , arg3: type ) -> auto
+fun name(arg: type , arg2: type <- defaultVal , arg3: type ) -> auto
 
     // do fun stuff
     return x
@@ -251,7 +251,7 @@ fun name(arg: type , arg2: type = defaultVal , arg3: type ) -> auto
 name(1,arg2: 2,3)
 
 // if function returns nothing, the returnType is empty
-fun name(arg: type , arg2: type = defaultVal , arg3: type )
+fun name(arg: type , arg2: type <- defaultVal , arg3: type )
 
     // do fun stuff
 
@@ -262,13 +262,13 @@ fun name(arg: type, arg2: type) -> (int x,y)
 
 
 trait
-    sortable = int,uint,char,float
-    addable = int, uint, float
-    sexy = ptr,adr
+    sortable <- int,uint,char,float
+    addable <- int, uint, float
+    sexy <- ptr,adr
     
     fun bubble_sort|T: sortable|(arr: [T]) -> [T]
         
-        uint n = len(arr)
+        uint n <- len(arr)
         loop i in arr
             loop j in range(first..n-i-1)
                 if arr[j] > arr[j+1]
@@ -319,7 +319,7 @@ obj name
 
         fun changeName(name: str)
 
-            name = name // can differentiate by syntax highlighting
+            name <- name // can differentiate by syntax highlighting
 
         fun revealId()
 
@@ -335,7 +335,7 @@ obj name
         from baseObj4
         from baseObj1
             not variableName, secondVarName
-            override variableName = 43
+            override variableName <- 43
             override base1func(args)
                 // stuff
         from baseObj2
@@ -352,7 +352,7 @@ obj | T: sortable,sexy | V: addable | genericName
         // do ending stuff
 
 
-string sayCrap = x >= 12 ? log "Fuck" : log "Shit"
+string sayCrap <- x >= 12 ? log "Fuck" : log "Shit"
 
 
 
@@ -369,9 +369,9 @@ obj nameObj
 
 std->baseObj.funName() //routing syntaxes
 
-heap x = 1,3,3,8
-stack x = 2,0,5,5
-queue x = 4,3,5,2
+heap x <- 1,3,3,8
+stack x <- 2,0,5,5
+queue x <- 4,3,5,2
 x.pop()
 x.dq()
 x.heapify()
