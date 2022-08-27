@@ -194,9 +194,9 @@ loop startIndex..endIndex:stepSize
     continue
     break
 
-loop once
+loop once, [condition]
     // iterate once 
-[condition]
+
 
 loop 1..10 where i % 2 == 0
     log "Even: $i"
