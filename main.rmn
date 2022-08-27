@@ -194,7 +194,7 @@ loop startIndex..endIndex:stepSize
     continue
     break
 
-loop once, [condition]
+loop once, condition
     // iterate once 
 
 
